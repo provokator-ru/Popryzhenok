@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75416631acd745148b89b09a6941bcff" Name="Diagram1">
+        <EntityTypeShape EntityType="tren2_SokolovModel.Agent" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.DeliveryHistory" Width="1.5" PointX="8.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.Employee" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.Material" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.Production" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.Products" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.ProductSale" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.QuantityOfGoods" Width="1.5" PointX="1.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.StandardNumber" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.Suppliers" Width="1.5" PointX="10.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.TypeAgent" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.TypeOfRawMaterial" Width="1.5" PointX="1.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.TypeSuppliers" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tren2_SokolovModel.WarehouseHistory" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Products_Agent1" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_DeliveryHistory_TypeSuppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Suppliers_DeliveryHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Employee_Production" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Material_WarehouseHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Production_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Production_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Suppliers_Production" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_Products_StandardNumber" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_ProductSale_Products1" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_QuantityOfGoods_TypeOfRawMaterial" ManuallyRouted="false" />
+        <AssociationConnector Association="tren2_SokolovModel.FK_WarehouseHistory_QuantityOfGoods" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

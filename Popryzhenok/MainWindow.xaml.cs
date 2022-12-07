@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Popryzhenok.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,16 +24,31 @@ namespace Popryzhenok
         public MainWindow()
         {
             InitializeComponent();
+            FrameMain.Navigate(new PageAgent());
+            Manager.FrameMain = FrameMain;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
+            Manager.FrameMain.GoBack();
 
         }
 
         private void btnFAQ_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void FrameMain_ContentRendered(object sender, EventArgs e)
+        {
+            if (FrameMain.CanGoBack)
+            {
+                Back.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Back.Visibility = Visibility.Hidden;
+            }
         }
     }
 }

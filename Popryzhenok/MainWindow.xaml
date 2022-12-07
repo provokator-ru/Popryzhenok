@@ -5,22 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Popryzhenok"
         mc:Ignorable="d"
-        Title="Админ Попрыжонка" Height="450" Width="800">
+        Title="Попрыжонок" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40*"/>
             <RowDefinition Height="200*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Background="#F9969E" Orientation="Horizontal">
-            <Image Source="\Resources\Попрыженок.png" Width="55" HorizontalAlignment="Left" Margin="10 0 0 0"/>
-            <Button x:Name="Back" Click="Back_Click" Width="150" Height="30" FontSize="17" Foreground="White" Background="#43DCFE" Margin="400 0 0 0" FontFamily="Comic Sans MS">Назад</Button>
-            <Button x:Name="btnFAQ" Click="btnFAQ_Click" Width="150" Height="30" FontSize="17" Foreground="White" Background="#43DCFE" Margin="20 0 0 0" FontFamily="Comic Sans MS">FAQ</Button>
+            <Image Source="\Resources\Попрыженок.png" HorizontalAlignment="Left" Margin="10 0 0 0"/>
+            <Button x:Name="Back" Click="Back_Click"  FontSize="17" Foreground="White" Background="#43DCFE" Margin="550 0 0 0" FontFamily="Comic Sans MS">Назад</Button>
         </StackPanel>
 
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
             <Image Source="\Resources\Попрыженок.png" Opacity=".1" Width="300"/>
         </StackPanel>
-        <Frame x:Name="FrameMain" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="FrameMain" ContentRendered="FrameMain_ContentRendered" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>
     
 </Window>
