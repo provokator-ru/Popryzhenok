@@ -140,6 +140,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\PageAddAgent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageAgent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manager.cs" />
+    <Compile Include="Pages\PageAddAgent.xaml.cs">
+      <DependentUpon>PageAddAgent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageAgent.xaml.cs">
       <DependentUpon>PageAgent.xaml</DependentUpon>
     </Compile>

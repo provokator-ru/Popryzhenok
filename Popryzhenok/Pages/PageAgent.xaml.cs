@@ -62,5 +62,30 @@ namespace Popryzhenok.Pages
         {
             UpdateAgent();
         }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            var agentForRemoving = LViewAgent.SelectedItems.Cast<Agent>().ToList();
+
+            if (MessageBox.Show($"Вы точно хотите удалить следующие {agentForRemoving.Count()} элементов?", "Внимание",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    tren2_SokolovEntities.GetContext().Agent.RemoveRange(agentForRemoving);
+                    tren2_SokolovEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
+        }
+
+        private void BtnRedact_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.FrameMain.Navigate(new PageAddAgent((sender as Button).DataContext as Agent));
+        }
     }
 }

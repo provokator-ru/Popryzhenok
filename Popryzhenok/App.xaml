@@ -8,11 +8,33 @@
             <Setter Property="Margin" Value="5"></Setter>
             <Setter Property="Width" Value="150"></Setter>
             <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="#43DCFE"></Setter>
         </Style>
-
         <Style TargetType="Image" x:Key="ImageSource">
             <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="Button" x:Key="BtnRedact">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#43DCFE"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="120 0 0 -130"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="Button" x:Key="BtnDelete">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#43DCFE"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="340 0 0 -130"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
         </Style>
     </Application.Resources>

@@ -34,11 +34,6 @@ namespace Popryzhenok
 
         }
 
-        private void btnFAQ_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void FrameMain_ContentRendered(object sender, EventArgs e)
         {
             if (FrameMain.CanGoBack)
@@ -49,6 +44,11 @@ namespace Popryzhenok
             {
                 Back.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.FrameMain.Navigate(new PageAddAgent(null)); ;
         }
     }
 }

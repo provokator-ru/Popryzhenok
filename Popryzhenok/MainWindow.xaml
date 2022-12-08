@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Popryzhenok"
         mc:Ignorable="d"
-        Title="Попрыжонок" Height="450" Width="800">
+        Title="Попрыжонок" Height="500" Width="800" MinWidth="800" MinHeight="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40*"/>
@@ -13,7 +13,8 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Background="#F9969E" Orientation="Horizontal">
             <Image Source="\Resources\Попрыженок.png" HorizontalAlignment="Left" Margin="10 0 0 0"/>
-            <Button x:Name="Back" Click="Back_Click"  FontSize="17" Foreground="White" Background="#43DCFE" Margin="550 0 0 0" FontFamily="Comic Sans MS">Назад</Button>
+            <Button x:Name="Add" Click="Add_Click" Margin="400 0 0 0">Добавить</Button>
+            <Button x:Name="Back" Click="Back_Click" Margin="5 0 0 0">Назад</Button>
         </StackPanel>
 
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
